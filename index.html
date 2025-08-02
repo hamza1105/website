@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RendezVous Pro - Réservation de Rendez-vous</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fas fa-calendar-check"></i>
+                <span class="brand-text" data-fr="RendezVous Pro" data-en="Appointment Pro" data-ar="موعد برو">RendezVous Pro</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link" data-fr="Accueil" data-en="Home" data-ar="الرئيسية">Accueil</a>
+                <a href="rendez-vous.html" class="nav-link" data-fr="Rendez-vous" data-en="Appointment" data-ar="موعد">Rendez-vous</a>
+                <a href="#services" class="nav-link" data-fr="Services" data-en="Services" data-ar="الخدمات">Services</a>
+                <a href="#providers" class="nav-link" data-fr="Professionnels" data-en="Providers" data-ar="المزودين">Professionnels</a>
+                <a href="#contact" class="nav-link" data-fr="Contact" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+            </div>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="fr">FR</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ar">AR</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-fr="Trouvez et réservez vos rendez-vous en ligne" data-en="Find and book your appointments online" data-ar="ابحث واحجز مواعيدك عبر الإنترنت">
+                Trouvez et réservez vos rendez-vous en ligne
+            </h1>
+            <p class="hero-subtitle" data-fr="Médecins, avocats, centres de beauté et plus encore" data-en="Doctors, lawyers, beauty centers and more" data-ar="أطباء ومحامون ومراكز تجميل والمزيد">
+                Médecins, avocats, centres de beauté et plus encore
+            </p>
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Rechercher un professionnel..." class="search-input" data-fr-placeholder="Rechercher un professionnel..." data-en-placeholder="Search for a professional..." data-ar-placeholder="البحث عن محترف...">
+                    <button class="search-btn" data-fr="Rechercher" data-en="Search" data-ar="بحث">Rechercher</button>
+                </div>
+                <div style="margin-top: 20px; text-align: center;">
+                    <a href="rendez-vous.html" class="btn btn-primary" style="display: inline-block; padding: 15px 30px; background: linear-gradient(135deg, #4caf50 0%, #45a049 100%); color: white; text-decoration: none; border-radius: 25px; font-weight: 600; transition: all 0.3s ease;" data-fr="Prendre un Rendez-vous" data-en="Book an Appointment" data-ar="حجز موعد">Prendre un Rendez-vous</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-card">
+                <i class="fas fa-user-md"></i>
+                <span data-fr="Médecins" data-en="Doctors" data-ar="أطباء">Médecins</span>
+            </div>
+            <div class="floating-card">
+                <i class="fas fa-gavel"></i>
+                <span data-fr="Avocats" data-en="Lawyers" data-ar="محامون">Avocats</span>
+            </div>
+            <div class="floating-card">
+                <i class="fas fa-spa"></i>
+                <span data-fr="Beauté" data-en="Beauty" data-ar="تجميل">Beauté</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-fr="Nos Services" data-en="Our Services" data-ar="خدماتنا">Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 data-fr="Médecins" data-en="Doctors" data-ar="أطباء">Médecins</h3>
+                    <p data-fr="Consultations médicales, spécialistes, urgences" data-en="Medical consultations, specialists, emergencies" data-ar="استشارات طبية وأخصائيون وطوارئ">Consultations médicales, spécialistes, urgences</p>
+                    <button class="service-btn" onclick="window.location.href='medecins.html'" data-fr="Voir les médecins" data-en="View doctors" data-ar="عرض الأطباء">Voir les médecins</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3 data-fr="Avocats" data-en="Lawyers" data-ar="محامون">Avocats</h3>
+                    <p data-fr="Conseils juridiques, consultations légales" data-en="Legal advice, legal consultations" data-ar="استشارات قانونية ومشورة قانونية">Conseils juridiques, consultations légales</p>
+                    <button class="service-btn" onclick="window.location.href='avocats.html'" data-fr="Voir les avocats" data-en="View lawyers" data-ar="عرض المحامون">Voir les avocats</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 data-fr="Centres de Beauté" data-en="Beauty Centers" data-ar="مراكز التجميل">Centres de Beauté</h3>
+                    <p data-fr="Soins esthétiques, massages, coiffure" data-en="Aesthetic treatments, massages, hairdressing" data-ar="علاجات تجميلية وتدليك وتصفيف شعر">Soins esthétiques, massages, coiffure</p>
+                    <button class="service-btn" onclick="window.location.href='beaute.html'" data-fr="Voir les centres" data-en="View centers" data-ar="عرض المراكز">Voir les centres</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3 data-fr="Salles de Sport" data-en="Gyms" data-ar="صالات رياضية">Salles de Sport</h3>
+                    <p data-fr="Entraînement personnel, cours collectifs" data-en="Personal training, group classes" data-ar="تدريب شخصي ودروس جماعية">Entraînement personnel, cours collectifs</p>
+                    <button class="service-btn" onclick="window.location.href='sport.html'" data-fr="Voir les salles" data-en="View gyms" data-ar="عرض الصالات">Voir les salles</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Providers Section -->
+    <section id="providers" class="providers">
+        <div class="container">
+            <h2 class="section-title" data-fr="Professionnels Recommandés" data-en="Recommended Professionals" data-ar="محترفون موصى بهم">Professionnels Recommandés</h2>
+            <div class="providers-grid" id="providersGrid">
+                <!-- Providers will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 data-fr="Réserver un Rendez-vous" data-en="Book an Appointment" data-ar="حجز موعد">Réserver un Rendez-vous</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label data-fr="Nom complet" data-en="Full Name" data-ar="الاسم الكامل">Nom complet</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Email" data-en="Email" data-ar="البريد الإلكتروني">Email</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Téléphone" data-en="Phone" data-ar="الهاتف">Téléphone</label>
+                    <input type="tel" required>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Date" data-en="Date" data-ar="التاريخ">Date</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Heure" data-en="Time" data-ar="الوقت">Heure</label>
+                    <input type="time" required>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Motif" data-en="Reason" data-ar="السبب">Motif</label>
+                    <textarea rows="3" data-fr-placeholder="Décrivez brièvement le motif de votre rendez-vous..." data-en-placeholder="Briefly describe the reason for your appointment..." data-ar-placeholder="اشرح بإيجاز سبب موعدك..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn" data-fr="Confirmer la Réservation" data-en="Confirm Booking" data-ar="تأكيد الحجز">Confirmer la Réservation</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-fr="RendezVous Pro" data-en="Appointment Pro" data-ar="موعد برو">RendezVous Pro</h3>
+                    <p data-fr="Votre plateforme de confiance pour la réservation de rendez-vous en ligne" data-en="Your trusted platform for online appointment booking" data-ar="منصتك الموثوقة لحجز المواعيد عبر الإنترنت">Votre plateforme de confiance pour la réservation de rendez-vous en ligne</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-fr="Liens Rapides" data-en="Quick Links" data-ar="روابط سريعة">Liens Rapides</h4>
+                    <ul>
+                        <li><a href="#home" data-fr="Accueil" data-en="Home" data-ar="الرئيسية">Accueil</a></li>
+                        <li><a href="#services" data-fr="Services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                        <li><a href="#providers" data-fr="Professionnels" data-en="Providers" data-ar="المزودين">Professionnels</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-fr="Contact" data-en="Contact" data-ar="اتصل بنا">Contact</h4>
+                    <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                    <p><i class="fas fa-envelope"></i> contact@rendezvouspro.fr</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RendezVous Pro. <span data-fr="Tous droits réservés" data-en="All rights reserved" data-ar="جميع الحقوق محفوظة">Tous droits réservés</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

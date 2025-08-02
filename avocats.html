@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avocats - RendezVous Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1 data-fr="RendezVous Pro" data-en="Appointment Pro" data-ar="موعد برو">RendezVous Pro</h1>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html" data-fr="Accueil" data-en="Home" data-ar="الرئيسية">Accueil</a></li>
+                        <li><a href="#services" data-fr="Services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                        <li><a href="#providers" data-fr="Professionnels" data-en="Providers" data-ar="المزودين">Professionnels</a></li>
+                    </ul>
+                </nav>
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ar">AR</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-fr="Trouvez l'Avocat Parfait" data-en="Find the Perfect Lawyer" data-ar="اعثر على المحامي المثالي">Trouvez l'Avocat Parfait</h1>
+                <p data-fr="Consultez des avocats qualifiés pour vos besoins juridiques" data-en="Consult qualified lawyers for your legal needs" data-ar="استشر محامين مؤهلين لاحتياجاتك القانونية">Consultez des avocats qualifiés pour vos besoins juridiques</p>
+                <div class="search-box">
+                    <input type="text" id="searchInput" data-fr-placeholder="Rechercher un avocat..." data-en-placeholder="Search for a lawyer..." data-ar-placeholder="البحث عن محامي...">
+                    <button id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-fr="Domaines de Droit" data-en="Legal Fields" data-ar="مجالات القانون">Domaines de Droit</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 data-fr="Droit Civil" data-en="Civil Law" data-ar="القانون المدني">Droit Civil</h3>
+                    <p data-fr="Contrats, responsabilité civile, propriété" data-en="Contracts, civil liability, property" data-ar="العقود والمسؤولية المدنية والملكية">Contrats, responsabilité civile, propriété</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3 data-fr="Droit Pénal" data-en="Criminal Law" data-ar="القانون الجنائي">Droit Pénal</h3>
+                    <p data-fr="Défense pénale et procédures judiciaires" data-en="Criminal defense and judicial procedures" data-ar="الدفاع الجنائي والإجراءات القضائية">Défense pénale et procédures judiciaires</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 data-fr="Droit Commercial" data-en="Commercial Law" data-ar="القانون التجاري">Droit Commercial</h3>
+                    <p data-fr="Droit des sociétés et commerce" data-en="Corporate law and commerce" data-ar="قانون الشركات والتجارة">Droit des sociétés et commerce</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 data-fr="Droit Immobilier" data-en="Real Estate Law" data-ar="قانون العقارات">Droit Immobilier</h3>
+                    <p data-fr="Transactions immobilières et baux" data-en="Real estate transactions and leases" data-ar="معاملات العقارات والإيجارات">Transactions immobilières et baux</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-fr="Droit de la Famille" data-en="Family Law" data-ar="قانون الأسرة">Droit de la Famille</h3>
+                    <p data-fr="Divorce, garde d'enfants, succession" data-en="Divorce, child custody, inheritance" data-ar="الطلاق وحضانة الأطفال والميراث">Divorce, garde d'enfants, succession</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3 data-fr="Droit du Travail" data-en="Labor Law" data-ar="قانون العمل">Droit du Travail</h3>
+                    <p data-fr="Conflits de travail et droit social" data-en="Labor disputes and social law" data-ar="نزاعات العمل والقانون الاجتماعي">Conflits de travail et droit social</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Providers Section -->
+    <section id="providers" class="providers">
+        <div class="container">
+            <h2 class="section-title" data-fr="Avocats Disponibles" data-en="Available Lawyers" data-ar="المحامون المتاحون">Avocats Disponibles</h2>
+            <div class="providers-grid" id="providersGrid">
+                <!-- Providers will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 data-fr="Réserver une Consultation Juridique" data-en="Book a Legal Consultation" data-ar="حجز استشارة قانونية">Réserver une Consultation Juridique</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label data-fr="Nom complet" data-en="Full Name" data-ar="الاسم الكامل">Nom complet</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Email" data-en="Email" data-ar="البريد الإلكتروني">Email</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Téléphone" data-en="Phone" data-ar="الهاتف">Téléphone</label>
+                    <input type="tel" required>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Date" data-en="Date" data-ar="التاريخ">Date</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Heure" data-en="Time" data-ar="الوقت">Heure</label>
+                    <input type="time" required>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Domaine de Droit" data-en="Legal Field" data-ar="مجال القانون">Domaine de Droit</label>
+                    <select required>
+                        <option value="" data-fr="Sélectionnez un domaine" data-en="Select a field" data-ar="اختر مجالاً">Sélectionnez un domaine</option>
+                        <option value="civil" data-fr="Droit Civil" data-en="Civil Law" data-ar="القانون المدني">Droit Civil</option>
+                        <option value="penal" data-fr="Droit Pénal" data-en="Criminal Law" data-ar="القانون الجنائي">Droit Pénal</option>
+                        <option value="commercial" data-fr="Droit Commercial" data-en="Commercial Law" data-ar="القانون التجاري">Droit Commercial</option>
+                        <option value="immobilier" data-fr="Droit Immobilier" data-en="Real Estate Law" data-ar="قانون العقارات">Droit Immobilier</option>
+                        <option value="famille" data-fr="Droit de la Famille" data-en="Family Law" data-ar="قانون الأسرة">Droit de la Famille</option>
+                        <option value="travail" data-fr="Droit du Travail" data-en="Labor Law" data-ar="قانون العمل">Droit du Travail</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Motif" data-en="Reason" data-ar="السبب">Motif</label>
+                    <textarea rows="3" data-fr-placeholder="Décrivez brièvement votre problème juridique..." data-en-placeholder="Briefly describe your legal issue..." data-ar-placeholder="اشرح بإيجاز مشكلتك القانونية..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn" data-fr="Confirmer la Réservation" data-en="Confirm Booking" data-ar="تأكيد الحجز">Confirmer la Réservation</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-fr="RendezVous Pro" data-en="Appointment Pro" data-ar="موعد برو">RendezVous Pro</h3>
+                    <p data-fr="Votre plateforme de confiance pour la réservation de consultations juridiques" data-en="Your trusted platform for legal consultation booking" data-ar="منصتك الموثوقة لحجز الاستشارات القانونية">Votre plateforme de confiance pour la réservation de consultations juridiques</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-fr="Liens Rapides" data-en="Quick Links" data-ar="روابط سريعة">Liens Rapides</h4>
+                    <ul>
+                        <li><a href="index.html" data-fr="Accueil" data-en="Home" data-ar="الرئيسية">Accueil</a></li>
+                        <li><a href="#services" data-fr="Services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                        <li><a href="#providers" data-fr="Avocats" data-en="Lawyers" data-ar="المحامون">Avocats</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-fr="Contact" data-en="Contact" data-ar="اتصل بنا">Contact</h4>
+                    <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                    <p><i class="fas fa-envelope"></i> contact@rendezvouspro.fr</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RendezVous Pro. <span data-fr="Tous droits réservés" data-en="All rights reserved" data-ar="جميع الحقوق محفوظة">Tous droits réservés</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

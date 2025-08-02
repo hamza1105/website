@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centres de Beauté - RendezVous Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1 data-fr="RendezVous Pro" data-en="Appointment Pro" data-ar="موعد برو">RendezVous Pro</h1>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html" data-fr="Accueil" data-en="Home" data-ar="الرئيسية">Accueil</a></li>
+                        <li><a href="#services" data-fr="Services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                        <li><a href="#providers" data-fr="Professionnels" data-en="Providers" data-ar="المزودين">Professionnels</a></li>
+                    </ul>
+                </nav>
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ar">AR</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-fr="Trouvez votre Centre de Beauté" data-en="Find your Beauty Center" data-ar="اعثر على مركز التجميل الخاص بك">Trouvez votre Centre de Beauté</h1>
+                <p data-fr="Découvrez les meilleurs centres de beauté et instituts de soins" data-en="Discover the best beauty centers and care institutes" data-ar="اكتشف أفضل مراكز التجميل ومعاهد العناية">Découvrez les meilleurs centres de beauté et instituts de soins</p>
+                <div class="search-box">
+                    <input type="text" id="searchInput" data-fr-placeholder="Rechercher un centre de beauté..." data-en-placeholder="Search for a beauty center..." data-ar-placeholder="البحث عن مركز تجميل...">
+                    <button id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-fr="Services de Beauté" data-en="Beauty Services" data-ar="خدمات التجميل">Services de Beauté</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 data-fr="Soins du Visage" data-en="Facial Care" data-ar="العناية بالوجه">Soins du Visage</h3>
+                    <p data-fr="Nettoyage, hydratation, anti-âge" data-en="Cleansing, hydration, anti-aging" data-ar="تنظيف وترطيب ومكافحة الشيخوخة">Nettoyage, hydratation, anti-âge</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3 data-fr="Coiffure" data-en="Hair Styling" data-ar="تصفيف الشعر">Coiffure</h3>
+                    <p data-fr="Coupe, coloration, brushing" data-en="Cut, coloring, styling" data-ar="قص وصبغ وتصفيف">Coupe, coloration, brushing</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h3 data-fr="Manucure & Pedicure" data-en="Manicure & Pedicure" data-ar="العناية بالأظافر">Manucure & Pedicure</h3>
+                    <p data-fr="Soins des mains et des pieds" data-en="Hand and foot care" data-ar="العناية باليدين والقدمين">Soins des mains et des pieds</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3 data-fr="Maquillage" data-en="Makeup" data-ar="المكياج">Maquillage</h3>
+                    <p data-fr="Maquillage professionnel et conseils" data-en="Professional makeup and advice" data-ar="مكياج احترافي ونصائح">Maquillage professionnel et conseils</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-massage"></i>
+                    </div>
+                    <h3 data-fr="Massages" data-en="Massages" data-ar="التدليك">Massages</h3>
+                    <p data-fr="Relaxation et bien-être" data-en="Relaxation and wellness" data-ar="استرخاء ورفاهية">Relaxation et bien-être</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 data-fr="Épilations" data-en="Hair Removal" data-ar="إزالة الشعر">Épilations</h3>
+                    <p data-fr="Cire, laser, épilation définitive" data-en="Waxing, laser, permanent hair removal" data-ar="شمع ولير وإزالة شعر دائمة">Cire, laser, épilation définitive</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Providers Section -->
+    <section id="providers" class="providers">
+        <div class="container">
+            <h2 class="section-title" data-fr="Centres de Beauté Disponibles" data-en="Available Beauty Centers" data-ar="مراكز التجميل المتاحة">Centres de Beauté Disponibles</h2>
+            <div class="providers-grid" id="providersGrid">
+                <!-- Providers will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 data-fr="Réserver un Soin de Beauté" data-en="Book a Beauty Treatment" data-ar="حجز علاج تجميل">Réserver un Soin de Beauté</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label data-fr="Nom complet" data-en="Full Name" data-ar="الاسم الكامل">Nom complet</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Email" data-en="Email" data-ar="البريد الإلكتروني">Email</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Téléphone" data-en="Phone" data-ar="الهاتف">Téléphone</label>
+                    <input type="tel" required>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Date" data-en="Date" data-ar="التاريخ">Date</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Heure" data-en="Time" data-ar="الوقت">Heure</label>
+                    <input type="time" required>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Type de Soin" data-en="Treatment Type" data-ar="نوع العلاج">Type de Soin</label>
+                    <select required>
+                        <option value="" data-fr="Sélectionnez un soin" data-en="Select a treatment" data-ar="اختر علاجاً">Sélectionnez un soin</option>
+                        <option value="facial" data-fr="Soins du Visage" data-en="Facial Care" data-ar="العناية بالوجه">Soins du Visage</option>
+                        <option value="hair" data-fr="Coiffure" data-en="Hair Styling" data-ar="تصفيف الشعر">Coiffure</option>
+                        <option value="nails" data-fr="Manucure & Pedicure" data-en="Manicure & Pedicure" data-ar="العناية بالأظافر">Manucure & Pedicure</option>
+                        <option value="makeup" data-fr="Maquillage" data-en="Makeup" data-ar="المكياج">Maquillage</option>
+                        <option value="massage" data-fr="Massages" data-en="Massages" data-ar="التدليك">Massages</option>
+                        <option value="hair-removal" data-fr="Épilations" data-en="Hair Removal" data-ar="إزالة الشعر">Épilations</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Motif" data-en="Reason" data-ar="السبب">Motif</label>
+                    <textarea rows="3" data-fr-placeholder="Décrivez brièvement vos besoins de beauté..." data-en-placeholder="Briefly describe your beauty needs..." data-ar-placeholder="اشرح بإيجاز احتياجاتك التجميلية..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn" data-fr="Confirmer la Réservation" data-en="Confirm Booking" data-ar="تأكيد الحجز">Confirmer la Réservation</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-fr="RendezVous Pro" data-en="Appointment Pro" data-ar="موعد برو">RendezVous Pro</h3>
+                    <p data-fr="Votre plateforme de confiance pour la réservation de soins de beauté" data-en="Your trusted platform for beauty treatment booking" data-ar="منصتك الموثوقة لحجز علاجات التجميل">Votre plateforme de confiance pour la réservation de soins de beauté</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-fr="Liens Rapides" data-en="Quick Links" data-ar="روابط سريعة">Liens Rapides</h4>
+                    <ul>
+                        <li><a href="index.html" data-fr="Accueil" data-en="Home" data-ar="الرئيسية">Accueil</a></li>
+                        <li><a href="#services" data-fr="Services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                        <li><a href="#providers" data-fr="Centres de Beauté" data-en="Beauty Centers" data-ar="مراكز التجميل">Centres de Beauté</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-fr="Contact" data-en="Contact" data-ar="اتصل بنا">Contact</h4>
+                    <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                    <p><i class="fas fa-envelope"></i> contact@rendezvouspro.fr</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RendezVous Pro. <span data-fr="Tous droits réservés" data-en="All rights reserved" data-ar="جميع الحقوق محفوظة">Tous droits réservés</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

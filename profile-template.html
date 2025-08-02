@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil du Professionnel - BookPro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-calendar-check"></i>
+                <span data-fr="BookPro" data-en="BookPro" data-ar="بوك برو">BookPro</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" data-fr="Accueil" data-en="Home" data-ar="الرئيسية">Accueil</a>
+                <a href="rendez-vous.html" data-fr="Rendez-vous" data-en="Appointment" data-ar="موعد">Rendez-vous</a>
+                <a href="#" data-fr="À propos" data-en="About" data-ar="حول">À propos</a>
+                <a href="#" data-fr="Contact" data-en="Contact" data-ar="اتصل">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="lang-btn" onclick="switchLanguage('fr')">FR</button>
+                <button class="lang-btn" onclick="switchLanguage('en')">EN</button>
+                <button class="lang-btn" onclick="switchLanguage('ar')">AR</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-container">
+                <div class="profile-header">
+                    <div class="profile-image">
+                        <i class="fas fa-user-md" id="providerIcon"></i>
+                    </div>
+                    <div class="profile-info">
+                        <h1 id="providerName">Nom du Professionnel</h1>
+                        <p class="specialty" id="providerSpecialty">Spécialité</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span id="providerRating">4.5</span>
+                        </div>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> <span id="providerLocation">Localisation</span></p>
+                        <div class="availability">
+                            <span class="status available" id="availabilityStatus">
+                                <i class="fas fa-check"></i> Disponible
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-content">
+                    <div class="profile-details">
+                        <div class="detail-section">
+                            <h3 data-fr="À propos" data-en="About" data-ar="حول">À propos</h3>
+                            <p id="providerDescription">
+                                Description détaillée du professionnel et de ses compétences.
+                            </p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3 data-fr="Services" data-en="Services" data-ar="الخدمات">Services</h3>
+                            <ul id="providerServices">
+                                <li>Service 1</li>
+                                <li>Service 2</li>
+                                <li>Service 3</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h3 data-fr="Horaires" data-en="Schedule" data-ar="الجدول الزمني">Horaires</h3>
+                            <div class="schedule">
+                                <div class="schedule-item">
+                                    <span class="day">Lundi - Vendredi</span>
+                                    <span class="time">09:00 - 18:00</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <span class="day">Samedi</span>
+                                    <span class="time">09:00 - 14:00</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <span class="day">Dimanche</span>
+                                    <span class="time">Fermé</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="booking-sidebar">
+                        <div class="quick-booking-card">
+                            <h3 data-fr="Prendre un Rendez-vous" data-en="Book an Appointment" data-ar="حجز موعد">Prendre un Rendez-vous</h3>
+                            <form id="quickBookingForm">
+                                <div class="form-group">
+                                    <label data-fr="Date" data-en="Date" data-ar="التاريخ">Date</label>
+                                    <input type="date" id="bookingDate" required>
+                                </div>
+                                <div class="form-group">
+                                    <label data-fr="Heure" data-en="Time" data-ar="الوقت">Heure</label>
+                                    <select id="bookingTime" required>
+                                        <option value="" data-fr="Sélectionnez une heure" data-en="Select a time" data-ar="اختر وقتاً">Sélectionnez une heure</option>
+                                        <option value="09:00">09:00</option>
+                                        <option value="10:00">10:00</option>
+                                        <option value="11:00">11:00</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="15:00">15:00</option>
+                                        <option value="16:00">16:00</option>
+                                        <option value="17:00">17:00</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label data-fr="Raison" data-en="Reason" data-ar="السبب">Raison</label>
+                                    <textarea id="bookingReason" rows="3" placeholder="Décrivez brièvement la raison de votre rendez-vous..." data-fr="Décrivez brièvement la raison de votre rendez-vous..." data-en="Briefly describe the reason for your appointment..." data-ar="صف بإيجاز سبب موعدك..."></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label data-fr="Nom complet" data-en="Full Name" data-ar="الاسم الكامل">Nom complet</label>
+                                    <input type="text" id="bookingName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label data-fr="Email" data-en="Email" data-ar="البريد الإلكتروني">Email</label>
+                                    <input type="email" id="bookingEmail" required>
+                                </div>
+                                <div class="form-group">
+                                    <label data-fr="Téléphone" data-en="Phone" data-ar="الهاتف">Téléphone</label>
+                                    <input type="tel" id="bookingPhone" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary" data-fr="Confirmer la Réservation" data-en="Confirm Booking" data-ar="تأكيد الحجز">Confirmer la Réservation</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-fr="BookPro" data-en="BookPro" data-ar="بوك برو">BookPro</h3>
+                    <p data-fr="Votre plateforme de réservation de confiance" data-en="Your trusted booking platform" data-ar="منصتك الموثوقة للحجز">Votre plateforme de réservation de confiance</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-fr="Liens Rapides" data-en="Quick Links" data-ar="روابط سريعة">Liens Rapides</h4>
+                    <ul>
+                        <li><a href="index.html" data-fr="Accueil" data-en="Home" data-ar="الرئيسية">Accueil</a></li>
+                        <li><a href="rendez-vous.html" data-fr="Rendez-vous" data-en="Appointment" data-ar="موعد">Rendez-vous</a></li>
+                        <li><a href="#" data-fr="À propos" data-en="About" data-ar="حول">À propos</a></li>
+                        <li><a href="#" data-fr="Contact" data-en="Contact" data-ar="اتصل">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-fr="Contact" data-en="Contact" data-ar="اتصل">Contact</h4>
+                    <p><i class="fas fa-envelope"></i> contact@bookpro.fr</p>
+                    <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BookPro. <span data-fr="Tous droits réservés" data-en="All rights reserved" data-ar="جميع الحقوق محفوظة">Tous droits réservés</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Get provider ID from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const providerId = urlParams.get('id');
+        
+        // Load provider data and populate the page
+        document.addEventListener('DOMContentLoaded', function() {
+            if (providerId) {
+                loadProviderProfile(providerId);
+            }
+            
+            // Handle quick booking form submission
+            document.getElementById('quickBookingForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                submitQuickBookingFromProfile();
+            });
+        });
+        
+        function loadProviderProfile(providerId) {
+            fetch(`/api/providers/${providerId}`)
+                .then(response => response.json())
+                .then(provider => {
+                    document.getElementById('providerName').textContent = provider.name;
+                    document.getElementById('providerSpecialty').textContent = provider.specialty;
+                    document.getElementById('providerRating').textContent = provider.rating;
+                    document.getElementById('providerLocation').textContent = provider.location;
+                    document.getElementById('providerIcon').className = provider.icon;
+                    
+                    const availabilityStatus = document.getElementById('availabilityStatus');
+                    if (provider.available) {
+                        availabilityStatus.className = 'status available';
+                        availabilityStatus.innerHTML = '<i class="fas fa-check"></i> Disponible';
+                    } else {
+                        availabilityStatus.className = 'status unavailable';
+                        availabilityStatus.innerHTML = '<i class="fas fa-times"></i> Non disponible';
+                    }
+                    
+                    // Update page title
+                    document.title = `${provider.name} - BookPro`;
+                })
+                .catch(error => {
+                    console.error('Error loading provider:', error);
+                });
+        }
+        
+        function submitQuickBookingFromProfile() {
+            const formData = {
+                providerId: providerId,
+                providerName: document.getElementById('providerName').textContent,
+                date: document.getElementById('bookingDate').value,
+                time: document.getElementById('bookingTime').value,
+                reason: document.getElementById('bookingReason').value,
+                firstName: document.getElementById('bookingName').value.split(' ')[0] || '',
+                lastName: document.getElementById('bookingName').value.split(' ').slice(1).join(' ') || '',
+                email: document.getElementById('bookingEmail').value,
+                phone: document.getElementById('bookingPhone').value,
+                address: ''
+            };
+            
+            submitBookingForm(formData);
+        }
+    </script>
+</body>
+</html> 

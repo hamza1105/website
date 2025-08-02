@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médecins - RendezVous Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1 data-fr="RendezVous Pro" data-en="Appointment Pro" data-ar="موعد برو">RendezVous Pro</h1>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html" data-fr="Accueil" data-en="Home" data-ar="الرئيسية">Accueil</a></li>
+                        <li><a href="#services" data-fr="Services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                        <li><a href="#providers" data-fr="Professionnels" data-en="Providers" data-ar="المزودين">Professionnels</a></li>
+                    </ul>
+                </nav>
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ar">AR</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-fr="Trouvez le Médecin Parfait" data-en="Find the Perfect Doctor" data-ar="اعثر على الطبيب المثالي">Trouvez le Médecin Parfait</h1>
+                <p data-fr="Réservez facilement vos rendez-vous médicaux avec des professionnels qualifiés" data-en="Easily book your medical appointments with qualified professionals" data-ar="احجز مواعيدك الطبية بسهولة مع محترفين مؤهلين">Réservez facilement vos rendez-vous médicaux avec des professionnels qualifiés</p>
+                <div class="search-box">
+                    <input type="text" id="searchInput" data-fr-placeholder="Rechercher un médecin..." data-en-placeholder="Search for a doctor..." data-ar-placeholder="البحث عن طبيب...">
+                    <button id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-fr="Spécialités Médicales" data-en="Medical Specialties" data-ar="التخصصات الطبية">Spécialités Médicales</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 data-fr="Cardiologie" data-en="Cardiology" data-ar="أمراض القلب">Cardiologie</h3>
+                    <p data-fr="Spécialistes du cœur et des vaisseaux sanguins" data-en="Heart and blood vessel specialists" data-ar="متخصصون في القلب والأوعية الدموية">Spécialistes du cœur et des vaisseaux sanguins</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 data-fr="Neurologie" data-en="Neurology" data-ar="طب الأعصاب">Neurologie</h3>
+                    <p data-fr="Spécialistes du système nerveux" data-en="Nervous system specialists" data-ar="متخصصون في الجهاز العصبي">Spécialistes du système nerveux</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3 data-fr="Pédiatrie" data-en="Pediatrics" data-ar="طب الأطفال">Pédiatrie</h3>
+                    <p data-fr="Soins médicaux pour enfants" data-en="Medical care for children" data-ar="رعاية طبية للأطفال">Soins médicaux pour enfants</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 data-fr="Ophtalmologie" data-en="Ophthalmology" data-ar="طب العيون">Ophtalmologie</h3>
+                    <p data-fr="Spécialistes de la vision" data-en="Vision specialists" data-ar="متخصصون في البصر">Spécialistes de la vision</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3 data-fr="Dentisterie" data-en="Dentistry" data-ar="طب الأسنان">Dentisterie</h3>
+                    <p data-fr="Soins dentaires et bucco-dentaires" data-en="Dental and oral care" data-ar="رعاية الأسنان والفم">Soins dentaires et bucco-dentaires</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 data-fr="Médecine Générale" data-en="General Medicine" data-ar="الطب العام">Médecine Générale</h3>
+                    <p data-fr="Médecins généralistes pour soins primaires" data-en="General practitioners for primary care" data-ar="أطباء عامون للرعاية الأولية">Médecins généralistes pour soins primaires</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Providers Section -->
+    <section id="providers" class="providers">
+        <div class="container">
+            <h2 class="section-title" data-fr="Médecins Disponibles" data-en="Available Doctors" data-ar="الأطباء المتاحون">Médecins Disponibles</h2>
+            <div class="providers-grid" id="providersGrid">
+                <!-- Providers will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 data-fr="Réserver un Rendez-vous Médical" data-en="Book a Medical Appointment" data-ar="حجز موعد طبي">Réserver un Rendez-vous Médical</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label data-fr="Nom complet" data-en="Full Name" data-ar="الاسم الكامل">Nom complet</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Email" data-en="Email" data-ar="البريد الإلكتروني">Email</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Téléphone" data-en="Phone" data-ar="الهاتف">Téléphone</label>
+                    <input type="tel" required>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Date" data-en="Date" data-ar="التاريخ">Date</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Heure" data-en="Time" data-ar="الوقت">Heure</label>
+                    <input type="time" required>
+                </div>
+                <div class="form-group">
+                    <label data-fr="Motif" data-en="Reason" data-ar="السبب">Motif</label>
+                    <textarea rows="3" data-fr-placeholder="Décrivez brièvement le motif de votre consultation..." data-en-placeholder="Briefly describe the reason for your consultation..." data-ar-placeholder="اشرح بإيجاز سبب استشارتك..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn" data-fr="Confirmer la Réservation" data-en="Confirm Booking" data-ar="تأكيد الحجز">Confirmer la Réservation</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-fr="RendezVous Pro" data-en="Appointment Pro" data-ar="موعد برو">RendezVous Pro</h3>
+                    <p data-fr="Votre plateforme de confiance pour la réservation de rendez-vous médicaux" data-en="Your trusted platform for medical appointment booking" data-ar="منصتك الموثوقة لحجز المواعيد الطبية">Votre plateforme de confiance pour la réservation de rendez-vous médicaux</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-fr="Liens Rapides" data-en="Quick Links" data-ar="روابط سريعة">Liens Rapides</h4>
+                    <ul>
+                        <li><a href="index.html" data-fr="Accueil" data-en="Home" data-ar="الرئيسية">Accueil</a></li>
+                        <li><a href="#services" data-fr="Services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                        <li><a href="#providers" data-fr="Médecins" data-en="Doctors" data-ar="الأطباء">Médecins</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-fr="Contact" data-en="Contact" data-ar="اتصل بنا">Contact</h4>
+                    <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                    <p><i class="fas fa-envelope"></i> contact@rendezvouspro.fr</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RendezVous Pro. <span data-fr="Tous droits réservés" data-en="All rights reserved" data-ar="جميع الحقوق محفوظة">Tous droits réservés</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

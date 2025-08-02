@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-fr="Prendre un Rendez-vous" data-en="Book an Appointment" data-ar="حجز موعد">Prendre un Rendez-vous</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-calendar-check"></i>
+                <span data-fr="BookPro" data-en="BookPro" data-ar="بوك برو">BookPro</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" data-fr="Accueil" data-en="Home" data-ar="الرئيسية">Accueil</a>
+                <a href="#" class="active" data-fr="Rendez-vous" data-en="Appointment" data-ar="موعد">Rendez-vous</a>
+                <a href="#" data-fr="À propos" data-en="About" data-ar="حول">À propos</a>
+                <a href="#" data-fr="Contact" data-en="Contact" data-ar="اتصل">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="lang-btn" onclick="switchLanguage('fr')">FR</button>
+                <button class="lang-btn" onclick="switchLanguage('en')">EN</button>
+                <button class="lang-btn" onclick="switchLanguage('ar')">AR</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 data-fr="Prenez votre Rendez-vous" data-en="Book Your Appointment" data-ar="احجز موعدك">Prenez votre Rendez-vous</h1>
+            <p data-fr="Trouvez et réservez facilement avec les meilleurs professionnels" data-en="Find and book easily with the best professionals" data-ar="ابحث واحجز بسهولة مع أفضل المحترفين">Trouvez et réservez facilement avec les meilleurs professionnels</p>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-container">
+                <div class="booking-header">
+                    <h2 data-fr="Formulaire de Réservation" data-en="Booking Form" data-ar="نموذج الحجز">Formulaire de Réservation</h2>
+                    <p data-fr="Remplissez les informations ci-dessous pour réserver votre rendez-vous" data-en="Fill in the information below to book your appointment" data-ar="املأ المعلومات أدناه لحجز موعدك">Remplissez les informations ci-dessous pour réserver votre rendez-vous</p>
+                </div>
+
+                <form class="booking-form" id="bookingForm">
+                    <!-- Category Selection -->
+                    <div class="form-step active" id="step1">
+                        <h3 data-fr="Choisissez votre catégorie" data-en="Choose your category" data-ar="اختر فئتك">Choisissez votre catégorie</h3>
+                        <p data-fr="Sélectionnez une catégorie pour voir tous les professionnels disponibles" data-en="Select a category to see all available professionals" data-ar="اختر فئة لرؤية جميع المحترفين المتاحين">Sélectionnez une catégorie pour voir tous les professionnels disponibles</p>
+                        
+                        <div class="category-grid">
+                            <div class="category-card" data-category="doctors" onclick="redirectToCategory('doctors')">
+                                <i class="fas fa-user-md"></i>
+                                <h4 data-fr="Médecins" data-en="Doctors" data-ar="الأطباء">Médecins</h4>
+                                <p data-fr="Médecins généralistes et spécialistes" data-en="General practitioners and specialists" data-ar="أطباء عامون ومتخصصون">Médecins généralistes et spécialistes</p>
+                            </div>
+                            <div class="category-card" data-category="lawyers" onclick="redirectToCategory('lawyers')">
+                                <i class="fas fa-gavel"></i>
+                                <h4 data-fr="Avocats" data-en="Lawyers" data-ar="المحامون">Avocats</h4>
+                                <p data-fr="Conseil juridique et représentation" data-en="Legal advice and representation" data-ar="المشورة القانونية والتمثيل">Conseil juridique et représentation</p>
+                            </div>
+                            <div class="category-card" data-category="beauty" onclick="redirectToCategory('beauty')">
+                                <i class="fas fa-spa"></i>
+                                <h4 data-fr="Centres de Beauté" data-en="Beauty Centers" data-ar="مراكز التجميل">Centres de Beauté</h4>
+                                <p data-fr="Soins esthétiques et bien-être" data-en="Aesthetic care and wellness" data-ar="العناية الجمالية والعافية">Soins esthétiques et bien-être</p>
+                            </div>
+                            <div class="category-card" data-category="gyms" onclick="redirectToCategory('gyms')">
+                                <i class="fas fa-dumbbell"></i>
+                                <h4 data-fr="Salles de Sport" data-en="Gyms" data-ar="صالات الرياضة">Salles de Sport</h4>
+                                <p data-fr="Fitness et activités sportives" data-en="Fitness and sports activities" data-ar="اللياقة البدنية والأنشطة الرياضية">Fitness et activités sportives</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-fr="BookPro" data-en="BookPro" data-ar="بوك برو">BookPro</h3>
+                    <p data-fr="Votre plateforme de réservation de confiance" data-en="Your trusted booking platform" data-ar="منصتك الموثوقة للحجز">Votre plateforme de réservation de confiance</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-fr="Liens Rapides" data-en="Quick Links" data-ar="روابط سريعة">Liens Rapides</h4>
+                    <ul>
+                        <li><a href="index.html" data-fr="Accueil" data-en="Home" data-ar="الرئيسية">Accueil</a></li>
+                        <li><a href="#" data-fr="Services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                        <li><a href="#" data-fr="À propos" data-en="About" data-ar="حول">À propos</a></li>
+                        <li><a href="#" data-fr="Contact" data-en="Contact" data-ar="اتصل">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-fr="Contact" data-en="Contact" data-ar="اتصل">Contact</h4>
+                    <p><i class="fas fa-envelope"></i> contact@bookpro.fr</p>
+                    <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BookPro. <span data-fr="Tous droits réservés" data-en="All rights reserved" data-ar="جميع الحقوق محفوظة">Tous droits réservés</span></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html> 
